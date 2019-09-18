@@ -167,13 +167,11 @@ section.resume-section .resume-item .resume-date {
 
 .text-primary {
   color: #6fd6ff !important;
-  /*#bff0cf*/
 }
 
 .text-primary-small {
   font-size: 1.05rem;
   color: #6FB6FF !important;
-  /*#bff0cf*/
 }
 
 a {
@@ -186,16 +184,17 @@ a:hover, a:focus, a:active {
 
 /* Style buttons */
 .btn {
-  background-color: #6fd6ff;
+  background-color: #bff0cf;
   border: none;
-  color: black;
+  color: solid rgba(191, 240, 207, 0.5);
+  margin-top: 2.5rem;
   height: 3.5rem;
-  margin-left: 1rem;
   cursor: pointer;
-  font-size: 20px;
+  font-family: 'Arial', sans-serif;
+  font-size: 1.3rem;
 }
 
 /* Darker background on mouse-over */
 .btn:hover {
-  background-color: #bff0cf;
+  background-color: #6fd6ff;
 }
