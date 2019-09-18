@@ -1,73 +1,463 @@
-<html>
-	<head>
-		<title>Kayleigh's Portfolio</title>
-		<style>
-			body {
-  				background-color: black;
-			}
-			h1 {
-				text-align: center;
-				font-family: "Courier New";
-				font-size: 7vmin;
-				color: #7CFC00;
-			}
-			h3 {
-				font-family: "Courier New";
-				color: #7CFC00;
-				font-size: 40px;
-				font-size: 4vmin;
-			}
-			table.center {
-    			margin-left: auto; 
-    			margin-right: auto;
-  			}
-  			.center {
-  				text-align: center;
-  			}
-  			.full-screen-box {
-			    background-color: black;
-			    position:absolute;
-			    width: 100%;
-			    height: 100%;
-			    text-align: center;
-			}
-			a:link {
-				text-decoration: none;
-				font-size: 3vmin;
-				font-family: "Courier New";
-				color: #7CFC00;
-			}
-			a:visited {
-				color: #7CFC00;
-				text-decoration: none;
-				font-family: "Courier New";
-			}
-			a:hover {
-				color: #999999;
-				text-decoration: none;
-				font-family: "Courier New";
-			}
-		</style>
-	</head>
+<!DOCTYPE html>
+<html lang="en">
 
-	<body text="Black">
-		<table class="full-screen-box" class = "parent" border="0px">
-		    <tr>
-		        <td>
-		            <h1>Kayleigh Brown</h1>
-					<h3 class = "center">UT Computer Science / Plan II Honors</h3>
-					<!-- tables -->
-					<table class = "center" cellpadding="15" cellspacing="0" border="0">
-						<tr>
-						  <td> <a href = "/Resume.pdf" target = "_blank">Resume</a></td>
-						  <td> <a href = "https://www.linkedin.com/in/kayleigh-brown" target = "_blank">LinkedIn</a> </td>
-						  <td> <a href = "https://www.github.com/kayleigh-brown" target = "_blank">GitHub</a> </td>
-						  <td> <a href = "https://www.kayleighbrown.com" target = "_blank">Photography</a> </td>
-						  <td> <a href="mailto:kayleigh.brown@utexas.edu?subject=I saw your portfolio">Email</a> </td>
-						</tr>
-			 		</table>
-		        </td>
-		    </tr>
-		</table>
-	</body>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Portfolio – Kayleigh Brown</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <!-- TODO: edit fonts (specifically the subheader font -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <!-- TODO: update color scheme to match cards (blue shift) -->
+  <link href="css/resume.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/font-mfizz-2.4.1/font-mfizz.css">
+
+</head>
+
+<body id="page-top">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-block d-lg-none">Kayleigh Brown</span>
+      <span class="d-none d-lg-block">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+        </li>
+        <li class="nav-item">
+          <!-- TODO: add projects hash and section info -->
+          <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
+        </li>
+        <!-- TODO add and update -->
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#extracurriculars">Extracurriculars</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid p-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+      <div class="w-100">
+        <!-- TODO chance font style here -->
+        <h1 class="mb-0">Kayleigh
+          <!-- TODO edit color of text primary -->
+          <span class="text-primary">Brown</span>
+        </h1>
+        <!-- TODO remove address? -->
+        <div class="subheading mb-5">(737) 444-5677 ·
+          <!-- TODO add email subject? -->
+          <a href="mailto:kayleigh.brown@utexas.edu">kayleigh.brown@utexas.edu</a>
+        </div>
+        <p class="lead mb-5">I am a sophomore at the University of Texas at Austin dual majoring in Computer Science and Plan II Honors. Throughout the years I have participated in a Girls Who Code Summer Immersion Program, helped teach students C++ at Code Longhorn and FirstBytes, and won an award for the Best Financial Hack at the WiCS Spring 2019 Hackathon.
+        <br><br>
+        I founded a Girls Who Code College Loop chapter at the University of Texas at Austin to help encourage female participation in Computer Science. My goal is to help close the gender gap in technology as much as possible. I aim to provide a sense of community and challenge for women in STEM, as well as utilize these challenges to help fight imposter syndrome.
+        <br><br>
+        All in all, I aim to improve my skills and myself along the way, with the hopes of one day changing the world for the better. </p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/kayleigh-brown/">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/kayleigh-brown">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.facebook.com/kayleigh.brown.5203">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/kayleigh.brown/">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="Resume.pdf" download="Resume_KayleighBrown.pdf">
+            <i class="fas fa-download"></i> 
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="experience">
+      <div class="w-100">
+        <h2 class="mb-5">Experience</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Program Assistant</h3>
+            <div class="subheading mb-3">The University of Texas at Austin</div>
+            <p>Assisted in teaching basic programming logic to newcoming programmers in C++ during FirstBytes and Code Longhorn. Solved programming and logic errors during labs and assisted with hardware issues relating to Arduinos. Presented on the fundamentals of coding hygiene and alternative educational paths. Designed and produced a new tool to assist in future camp projects. Captured and edited professional photographs for the duration of multiple camps.</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary-small">June 2019 - July 2019</span><br>
+            <span class="text-primary-small">June 2017 - June 2017</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Accounting Assistant</h3>
+            <div class="subheading mb-3">Complete Book and Media Supply</div>
+            <p>Continuously maintained and analyzed multiple customer and credit accounts. Resolved disputes with both customers and merchants. Cleaned up system backlog to ensure greater efficiency. Instituted new, more secure policies for storing customer data. Assisted the CFO in tracking EFT and check payments.</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary-small">November 2017 - October 2018</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Summer Immersion Participant</h3>
+            <div class="subheading mb-3">Girls Who Code</div>
+            <p>Participated in intensive projects, culminating in a two-week final project of our own design. Engaged in conferences with leading tech companies and suggested new diversity and marketing strategies.</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary-small">June 2016 - August 2016</span>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
+      <div class="w-100">
+        <h2 class="mb-5">Education</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">The University of Texas at Austin</h3>
+            <div class="subheading mb-3">Bachelor of Science in Computer Science<br>
+            Bachelor of Arts in Plan II Honors</div>
+            <!-- <div>Computer Science - Web Development Track</div> -->
+            <p>Relevant Coursework</p>
+            <ul>
+              <li>Data Structures</li>
+              <li>Computer Architecture</li>
+              <li>Robot Learning, Freshman Research Initiative</li>
+              <li>Probability and Statistics</li>
+              <li>Differential and Integral Calculus</li>
+              <li>Discrete Math</li>
+              <li>Architecture and Society</li>
+              <li>Problems in Modern Biology</li>
+            </ul>
+            <p>GPA: 3.75</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary-small">August 2018 - June 2022</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-0">Leander High School</h3>
+            <div class="subheading mb-3">International Baccalaureate Diploma</div>
+            <p>GPA: 4.00</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary-small">August 2013 - May 2017</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TODO add Project sections to show what languages and tools were used -->
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="projects">
+      <div class="w-100">
+        <h2 class="mb-5">Projects</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">$aveur</h3>
+            <div class="subheading mb-3">Backend Developer</div>
+            <p>A website designed to help users learn to budget and save money. A user can implement limits to certain categories of spending and $aveur will keep track of how much budget they have remaining within a certain category. If by the end of the month they have a surplus within a category, that surplus is automatically deposited into a savings account of the user's choosing. I was responsible for creating a rudimentary back-end to the website to keep track of bank accounts, spending history, and budget categories for multiple users. I worked with Nessie, Capital One's Hackathon API in order to connect with the user's bank account to track categorical spending.</p>
+            <p>Won Best Financial Hack at the WiCS Spring 2019 Hackathon</p>
+            <div class="subheading mb-3">Languages &amp; Tools</div>
+            <ul class="list-inline dev-icons">
+              <li class="list-inline-item">
+                <i class="fab fa-github"></i>
+              </li>
+              <li class="list-inline-item">
+                <i class="fab fa-npm"></i>
+              </li>
+              <li class="list-inline-item">
+                <i class="fab fa-node-js"></i>
+              </li>
+            </ul>
+            
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary-small">WiCS Spring 2019 Hackathon</span><br>
+            <span class="text-primary-small">February 2019</span><br>
+            <span class="text-primary-small">12 hours</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Political Awareness</h3>
+            <div class="subheading mb-3">Lead Programmer</div>
+            <p>A website designed to give impartial political information regarding the 2016 Presidential Election.</p>
+            Includes:
+            <ul>
+              <li>Quizzes to determine political and candidate affiliations</li>
+              <li>Information on the values and histories of 5 major political parties (Democratic, Republican, Libertarian, Constitutional)</li>
+              <li>Links to register with any given party</li>
+              <li>Information by state on how to become a registered voter, as well as dates of major elections</li>
+              <li>Information on the forerunning candidates in the 5 political parties (Democratic, Republican, Libertarian, Constitutional)</li>
+            </ul>
+            <div class="subheading mb-3">Languages &amp; Tools</div>
+            <ul class="list-inline dev-icons">
+              <li class="list-inline-item">
+                <i class="fab fa-github"></i>
+              </li>
+              <li class="list-inline-item">
+                <i class="fab fa-html5"></i>
+              </li>
+              <li class="list-inline-item">
+                <i class="fab fa-css3-alt"></i>
+              </li>
+              <li class="list-inline-item">
+                <i class="fab fa-js-square"></i>
+              </li>
+              <li class="list-inline-item">
+                <i class="fab fa-bootstrap"></i>
+              </li>
+            </ul>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary-small">Girls Who Code SIP Final Project</span><br>
+            <span class="text-primary-small">August 2016</span><br>
+            <span class="text-primary-small">2 weeks</span>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
+      <div class="w-100">
+        <h2 class="mb-5">Skills</h2>
+
+        <div class="subheading mb-3">Programming Languages</div>
+        <ul class="list-inline dev-icons">
+          <li class="list-inline-item">
+            <i class="fab fa-java"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-html5"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-css3-alt"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-js-square"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="icon-cplusplus"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="icon-c"></i>
+          </li>
+          <!-- <li class="list-inline-item">
+            <i class="fab fa-python"></i>
+          </li> -->
+        </ul>
+
+        <div class="subheading mb-3">Software &amp; Tools</div>
+        <ul class="list-inline dev-icons">
+          <li class="list-inline-item">
+            <i class="fab fa-github"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-adobe"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-microsoft"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-apple"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-bootstrap"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-slack"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-wix"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-npm"></i>
+          </li>
+          <!-- <li class="list-inline-item">
+            <i class="fab fa-angular"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-react"></i>
+          </li> -->
+          <!-- <li class="list-inline-item">
+            <i class="fab fa-node-js"></i>
+          </li> -->
+        </ul>
+
+        <div class="subheading mb-3">Soft Skills</div>
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Team Management</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Public Speaking</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Communication</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            High Work Ethic</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Time Management</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- TODO update interests -->
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
+      <div class="w-100">
+        <h2 class="mb-5">Interests</h2>
+        <p>Outside of school, I enjoy science-fiction novels/TV shows/movies, and graphic design. When the weather permits (i.e. it's not 100º+ outside) I also enjoy hiking and traveling. I am especially a fan of long road trips!</p>
+        <p>I have also been a photographer for over 12 years and have been doing it professionally since 2008. My focus lies in portraiture and wedding photography but I love to experiment in landscape, nature, and abstract photography in my free time.</p>
+        <!-- TODO: insert 'check out my photography site here' button -->
+      </div>
+    </section>
+
+    <!-- TODO: add descriptions -->
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="extracurriculars">
+      <div class="w-100">
+        <h2 class="mb-5">Extracurriculars &amp; Volunteering</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Girls Who Code College Loop</h3>
+            <div class="subheading mb-3">Founder and President</div>
+            <p>The Girls Who Code College Loop works closely with the Girls Who Code HQ to help encourage female participation in Computer Science. The goal is to help close the gender gap in technology as much as possible and provide a sense of community and challenge for women in STEM. The Girls Who Code HQ sends out new tech and social challenges every semester, and the College Loop holds meetings and events designed around solving these challenges as a community.</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary-small">August 2018 - Present</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Women in Computer Science (WiCS)</h3>
+            <div class="subheading mb-3">Member</div>
+            <p>WiCS offers support for women in Computer Science through networking opportunities, outreach programs, academic and professional opportunities, and social events. As a member I have participated in the Nell Dale Mentorship Program and WiCS Hackathons, as well as attended several WiCS sponsored events every semester.</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary-small">August 2018 - Present</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Highland Estates</h3>
+            <div class="subheading mb-3">Plinko Coordinator</div>
+            <p>I volunteered at a retirement center for several years, eventually getting promoted to Plinko Coordinator. My role was to ensure that weekly games of Plinko were set up, run, supervised, and cleaned up for the residents. I was also responsible for ensuring the clean-up and organization of the break room, as well as setting up for other weekly events.</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary-small">August 2014 - January 2018</span>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Eventual TODO: Add certifications to this section (once received) -->
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
+      <div class="w-100">
+        <h2 class="mb-5">Awards</h2>
+        <ul>
+        <!-- <ul class="fa-ul mb-0"> -->
+          <li>
+            <!-- <i class="fa-li fa fa-trophy text-warning"></i> -->
+            Best Financial Hack – WiCS Spring 2019 Hackathon</li>
+          <li>Lockheed Martin STEM Scholar, 2019</li>
+          <li> Chevron Women in Computer Science Scholar, 2019</li>
+          <li> Macy Hodges Reasoner Scholar, 2019</li>
+          <li>KCAT Foundation Scholar, 2018</li>
+          <li>Carrin Foreman Mauritz Patman Plan II Scholar, 2018</li>
+            <!-- 2<sup>nd</sup> -->
+          <li> Top 10 in graduating class, out of 500, 2017</li>
+          <li> Best English Student, 2017</li>
+          <li> Best Computer Science Student, 2017</li>
+        </ul>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/resume.min.js"></script>
+
+</body>
+
 </html>
